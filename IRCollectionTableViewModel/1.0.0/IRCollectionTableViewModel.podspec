@@ -9,5 +9,5 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "8.0"
   spec.source       = { :git => "https://github.com/irons163/IRCollectionTableViewModel.git", :tag => spec.version.to_s }
 # spec.source       = { :path => '.' }
-  spec.source_files  = "Class/**/*.{h,m}", "IRCollectionTableViewModel/Class/**/*.{h,m}"
+  spec.source_files  = "IRCollectionTableViewModel/**/*.{h,m}"
 end
