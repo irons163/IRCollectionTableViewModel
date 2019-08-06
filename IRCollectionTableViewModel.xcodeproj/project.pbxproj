@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		8A8BC6AD22EFDA900069707E /* IRCollectionTableViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8BC6AB22EFDA900069707E /* IRCollectionTableViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A8BC6BE22EFDAD00069707E /* SectionBasicModelItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8BC6B422EFDACF0069707E /* SectionBasicModelItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A8BC6BF22EFDAD00069707E /* RowBasicModelItem+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8BC6B522EFDACF0069707E /* RowBasicModelItem+Private.h */; };
+		8A8BC6BF22EFDAD00069707E /* RowBasicModelItem+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8BC6B522EFDACF0069707E /* RowBasicModelItem+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A8BC6C022EFDAD00069707E /* RowBasicModelItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8BC6B622EFDACF0069707E /* RowBasicModelItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A8BC6C122EFDAD00069707E /* TableViewBasicViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BC6B722EFDACF0069707E /* TableViewBasicViewModel.m */; };
 		8A8BC6C222EFDAD00069707E /* SectionBasicModelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BC6B822EFDACF0069707E /* SectionBasicModelItem.m */; };
 		8A8BC6C322EFDAD00069707E /* RowBasicModelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BC6B922EFDACF0069707E /* RowBasicModelItem.m */; };
 		8A8BC6C422EFDAD00069707E /* RowType.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8BC6BA22EFDAD00069707E /* RowType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A8BC6C522EFDAD00069707E /* SectionModelItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8BC6BB22EFDAD00069707E /* SectionModelItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A8BC6C622EFDAD00069707E /* SectionType.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8BC6BC22EFDAD00069707E /* SectionType.h */; };
+		8A8BC6C622EFDAD00069707E /* SectionType.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8BC6BC22EFDAD00069707E /* SectionType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A8BC6C722EFDAD00069707E /* TableViewBasicViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8BC6BD22EFDAD00069707E /* TableViewBasicViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -99,10 +99,10 @@
 			files = (
 				8A8BC6BE22EFDAD00069707E /* SectionBasicModelItem.h in Headers */,
 				8A8BC6C722EFDAD00069707E /* TableViewBasicViewModel.h in Headers */,
-				8A8BC6BF22EFDAD00069707E /* RowBasicModelItem+Private.h in Headers */,
 				8A8BC6C022EFDAD00069707E /* RowBasicModelItem.h in Headers */,
 				8A8BC6C422EFDAD00069707E /* RowType.h in Headers */,
 				8A8BC6C522EFDAD00069707E /* SectionModelItem.h in Headers */,
+				8A8BC6BF22EFDAD00069707E /* RowBasicModelItem+Private.h in Headers */,
 				8A8BC6AD22EFDA900069707E /* IRCollectionTableViewModel.h in Headers */,
 				8A8BC6C622EFDAD00069707E /* SectionType.h in Headers */,
 			);
