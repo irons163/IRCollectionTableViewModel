@@ -6,7 +6,7 @@
 //  Copyright © 2019 EnGenius. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "RowBasicModelItem.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
