@@ -3,7 +3,7 @@
 //  IR_CollectionTableViewModel
 //
 //  Created by Phil on 2019/5/8.
-//  Copyright © 2019 EnGenius. All rights reserved.
+//  Copyright © 2019 Phil. All rights reserved.
 //
 
 #import "RowBasicModelItem.h"

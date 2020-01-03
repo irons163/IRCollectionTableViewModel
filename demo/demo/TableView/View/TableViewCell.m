@@ -3,7 +3,7 @@
 //  demo
 //
 //  Created by Phil on 2019/5/8.
-//  Copyright © 2019 EnGenius. All rights reserved.
+//  Copyright © 2019 Phil. All rights reserved.
 //
 
 #import "TableViewCell.h"
@@ -13,8 +13,6 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     
-//    [self.checkboxButton setImage:[self translucentImageFromImage:[self.checkboxButton imageForState:UIControlStateNormal]withAlpha:0.5f] forState:UIControlStateNormal|UIControlStateDisabled];
-//    [self.checkboxButton setImage:[self translucentImageFromImage:[self.checkboxButton imageForState:UIControlStateSelected]withAlpha:0.5f] forState:UIControlStateSelected|UIControlStateDisabled];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -34,11 +32,6 @@
     
     return translucentImage;
 }
-
-//- (IBAction)checkboxButtonClick:(id)sender {
-//    if(self.checkboxButtonClick)
-//        self.checkboxButtonClick(sender);
-//}
 
 + (NSString*)identifier{
     return NSStringFromClass([self class]);

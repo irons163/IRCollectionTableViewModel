@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "IRCollectionTableViewModel"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "A powerful and elegant CollectionView/TableView of iOS."
   spec.description  = "A powerful and elegant CollectionView/TableView of iOS."
   spec.homepage     = "https://github.com/irons163/IRCollectionTableViewModel.git"

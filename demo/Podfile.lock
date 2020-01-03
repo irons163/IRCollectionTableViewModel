@@ -1,0 +1,16 @@
+PODS:
+  - IRCollectionTableViewModel (1.0.0)
+
+DEPENDENCIES:
+  - IRCollectionTableViewModel
+
+SPEC REPOS:
+  trunk:
+    - IRCollectionTableViewModel
+
+SPEC CHECKSUMS:
+  IRCollectionTableViewModel: 9e3d5f0e7b434d54f3665ae9329a37b32107bc67
+
+PODFILE CHECKSUM: 260991d456e13fb17ef292acbbcfbb6e0ab2ec28
+
+COCOAPODS: 1.8.0.beta.2

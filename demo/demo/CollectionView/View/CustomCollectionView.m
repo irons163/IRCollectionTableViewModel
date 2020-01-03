@@ -1,9 +1,8 @@
 //
 //  CustomCollectionView.m
-//  EnShare
 //
 //  Created by Phil on 2016/12/15.
-//  Copyright © 2016年 Senao. All rights reserved.
+//  Copyright © 2019 Phil. All rights reserved.
 //
 
 #import "CustomCollectionView.h"

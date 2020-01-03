@@ -3,17 +3,15 @@
 //  demo
 //
 //  Created by Phil on 2019/5/17.
-//  Copyright © 2019 EnGenius. All rights reserved.
+//  Copyright © 2019 Phil. All rights reserved.
 //
 
 #import "CollectionBrowserViewModel.h"
-//#import "SectionBasicModelItem.h"
 #import "MonitorFolderCollectionViewCell.h"
 #import "MonitorFileCollectionViewCell.h"
 #import "MonitorableFolderClass.h"
 #import "MonitorableFileClass.h"
 #import "Utility.h"
-//#import "EnGeniusScope.h"
 
 @implementation CollectionBrowserRowItem
 @dynamic type;
