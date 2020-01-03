@@ -95,8 +95,8 @@
     NSInteger rowTag = 0;
     for (int section = 0; section < [items count]; section++) {
         for (RowBasicModelItem *row in items[section].rows) {
-            rowTag += row.tagRange.length;
             row.tagRange = NSMakeRange(rowTag, row.tagRange.length);
+            rowTag += row.tagRange.length;
         }
     }
 }
@@ -107,16 +107,16 @@
         for (int row = 0; row < [items[section].rows count]; row++) {
             RowBasicModelItem *rowItem = [items[section].rows objectAtIndex:row];
             NSInteger tagLength = rowItem.tagRange.length;
-            if(rowTag - tagLength >= 0)
-                rowTag -= tagLength;
+            rowTag -= tagLength;
             
-            if (rowTag <= 0) {
+            if (rowTag + 1 <= 0) {
                 indexPath = [NSIndexPath indexPathForRow:row inSection:section];
-                break;
+                return indexPath;
             }
         }
     }
     return indexPath;
 }
+
 
 @end
