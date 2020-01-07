@@ -21,6 +21,12 @@
 - Add `pod 'IRCollectionTableViewModel'`  in the `Podfile`
 - `pod install`
 
+## Introduction MVVM
+
+- Model--view--viewmodel (MVVM) is a software architectural pattern.
+- It has advantages more than the tranditional MVC architectural. Can improve the whole code strurcture.
+- More detail can see the MVVM wikipedia. [MVVM](https://en.wikipedia.org/wiki/Model–view–viewmodel)
+
 ## Usage
 
 ### Basic
