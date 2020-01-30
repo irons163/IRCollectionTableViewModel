@@ -53,7 +53,7 @@
     if (self = [super init]) {
         items = [[NSMutableArray<id<SectionModelItem>> alloc] init];
         
-        [tableView registerNib:[UINib nibWithNibName:TableViewCell.identifier bundle:nil] forCellReuseIdentifier:TableViewCell.identifier];
+        [tableView registerNib:[UINib nibWithNibName:CELL_NIB_NAME bundle:nil] forCellReuseIdentifier:CELL_IDENTIFIER];
     }
     return self;
 }
@@ -68,27 +68,35 @@
 - (void)update {
     [items removeAllObjects];
     // Setup items
+    // [self setupRows];
 }
 
 ```
 
-- For setup `items`, other words, setup the sections/rows you want to show. Create `TableViewSectionItem`  and `TableViewRowItem`, `TableViewSectionType`
+- For setup `items`, other words, setup the sections/rows you want to show. Create `TableViewSectionItem`  and `TableViewRowItem`, `DemoSectionType`, `DemoRowType`
 ```objc
-typedef NS_ENUM(NSInteger, ProfileRowType){
+typedef NS_ENUM(NSInteger, DemoSectionType){
+    DemoSection
+};
+
+typedef NS_ENUM(NSInteger, DemoRowType){
     RowType_DemoRow
 };
 
 @interface TableViewRowItem : RowBasicModelItem
-@property (readonly) ProfileRowType type;
-@end
-
-implementation TableViewRowItem
-@dynamic type;
+@property (readonly) DemoRowType type;
 @end
 
 @interface TableViewSectionItem : SectionBasicModelItem
 @property (nonatomic) NSString* sectionTitle;
 @property (nonatomic) SectionType type;
+@end
+```
+
+- Implementation `TableViewSectionItem`  and `TableViewRowItem` in the `TableViewViewModel.m`
+```objc
+@implementation TableViewRowItem
+@dynamic type;
 @end
 
 @implementation TableViewSectionItem
@@ -160,7 +168,7 @@ implementation TableViewRowItem
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.tableView registerNib:[UINib nibWithNibName:TableViewHeaderView.identifier bundle:nil] forHeaderFooterViewReuseIdentifier:TableViewHeaderView.identifier];
+    [self.tableView registerNib:[UINib nibWithNibName:HEADER_VIEW_NIB_NAME bundle:nil] forHeaderFooterViewReuseIdentifier:HEADER_VIEW_IDENTIFIER];
     viewModel = [[TableViewViewModel alloc] initWithTableView:_tableView];
     _tableView.dataSource = viewModel;
     [viewModel update];
