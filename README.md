@@ -179,11 +179,11 @@ typedef NS_ENUM(NSInteger, DemoRowType){
 
 #### CollectionView
 
-- Just the same way of `TableViewViewModel`. Create a new class `CollectionBrowserViewModel` extends `TableViewBasicViewModel<UITableViewDataSource>`, and Import `IRCollectionTableViewModel`
+- Just the same way of `TableViewViewModel`. Create a new class `CustomCollectionViewModel` extends `TableViewBasicViewModel<UICollectionViewDataSource>`, and Import this `CustomCollectionViewModel` to view controller
 
 - You can add your init method and register the cell inside
 
-- For setup `items`, other words, setup the sections/rows you want to show. Create `CollectionBrowserSectionItem`  and `CollectionBrowserRowItem`, `CollectionBrowserSectionType`
+- For setup `items`, other words, setup the sections/rows you want to show. Create `CustomCollectionSectionItem`  and `CustomCollectionRowItem`, `CustomCollectionSectionType`
 
 - Override `UICollectionViewDataSource` 
 
